@@ -1,0 +1,135 @@
+@page {
+  size: letter;
+  margin: 0.45in 0.55in;
+}
+
+.plate-placeholder {
+  background:
+    radial-gradient(circle at 50% 46%, transparent 28%, rgba(255, 255, 255, 0.14) 29%, rgba(255, 255, 255, 0.14) 30%, transparent 31%),
+    linear-gradient(180deg, #18181b 0%, #09090b 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+.resume-action {
+  isolation: isolate;
+  overflow: visible;
+}
+
+.resume-btn {
+  border-radius: 10px;
+  background-color: rgba(9, 9, 11, .94);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .28), inset 0 1px rgba(255, 255, 255, .12);
+  transition: background-color 180ms cubic-bezier(.22, 1, .36, 1),
+    color 180ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.resume-btn:hover {
+  background-color: #f4f4f5;
+  color: #09090b;
+}
+
+.resume-btn:focus-visible {
+  outline: 2px solid #71e4ff;
+  outline-offset: 3px;
+}
+
+
+
+
+@media print {
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  body {
+    margin: 0 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.32 !important;
+  }
+
+  body > header,
+  main > section:not([aria-labelledby="plates-heading"]) {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: none !important;
+    break-inside: auto;
+  }
+
+  /* Remove screen grid tracks and column spans from the print flow. */
+  body > header,
+  main > section:not([aria-labelledby="plates-heading"]) .grid {
+    display: block !important;
+    gap: 0 !important;
+  }
+
+  body > header {
+    min-height: 0 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) article {
+    margin: 0 !important;
+    padding: 8pt 0 0 !important;
+    break-inside: auto;
+  }
+
+  body > header p,
+  main > section:not([aria-labelledby="plates-heading"]) p,
+  main > section:not([aria-labelledby="plates-heading"]) ul,
+  main > section:not([aria-labelledby="plates-heading"]) li {
+    font-size: 10.5pt !important;
+    line-height: 1.32 !important;
+  }
+
+  body > header p,
+  main > section:not([aria-labelledby="plates-heading"]) p {
+    margin: 1pt 0 0 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) li {
+    margin: 0 0 1.5pt !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) ul {
+    margin: 3pt 0 0 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) ul.list-disc {
+    padding-left: 1.15em !important;
+  }
+
+  body > header h1 {
+    margin: 6pt 0 3pt !important;
+    font-size: 22pt !important;
+    line-height: 1.1 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) h2,
+  main > section:not([aria-labelledby="plates-heading"]) h3 {
+    line-height: 1.25 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) h2 {
+    margin: 12pt 0 4pt !important;
+    font-size: 11pt !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) h3 {
+    margin: 0 !important;
+    font-size: 12pt !important;
+  }
+}

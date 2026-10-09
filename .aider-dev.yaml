@@ -1,0 +1,18 @@
+repo_name: riverjohandsome
+project_type: generic
+models:
+  architect: openai/gpt-6-astra
+  editor: openai/gpt-6-sol
+  weak: openai/gpt-6-luna
+  reasoning_effort: medium
+verification:
+  commands: []
+hygiene:
+  auto_prune_history: true
+  max_history_bytes: 51200
+  clean_history_on_dispatch: true
+caching:
+  cache_prompts: true
+  map_tokens: 1024
+security:
+  keychain_service: aider-openai-api-key

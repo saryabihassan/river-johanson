@@ -1,0 +1,11 @@
+
+.DS_Store
+
+# aider_dev cache & history hygiene
+.aider.chat.history.md
+.aider.input.history
+.aider.tags.cache.v3
+.aider*
+!.aider-dev.yaml
+.aider-dev/
+

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>River Johanson — Chef</title>
+    <meta
+      name="description"
+      content="River Johanson is a Boston chef with eight years in fine dining and farm-to-table kitchens."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', "Georgia", "serif"],
+              sans: ["Inter", "Helvetica", "Arial", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+  </head>
+  <body class="bg-zinc-950 font-sans text-zinc-50 antialiased print:bg-white print:text-black">
+    <div class="resume-action fixed bottom-7 right-4 sm:bottom-8 sm:right-8 z-50 print:hidden">
+      <button
+        type="button"
+        aria-label="Download Resume"
+        onclick="window.print()"
+        class="resume-btn border border-zinc-50/30 bg-zinc-950/80 px-4 py-2.5 sm:px-5 sm:py-3 text-[10px] sm:text-xs uppercase tracking-[0.20em] sm:tracking-[0.22em] text-zinc-50 backdrop-blur-sm print:hidden transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
+      >
+        Download Resume
+      </button>
+    </div>
+
+    <header class="mx-auto grid min-h-[100svh] max-w-6xl items-center gap-10 sm:gap-14 md:gap-16 px-6 py-12 sm:py-16 md:py-24 md:grid-cols-12 md:px-10 print:min-h-0 print:max-w-none print:gap-0 print:px-0 print:py-0">
+      <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out md:col-span-5 print:col-span-12 print:translate-y-0 print:opacity-100">
+        <p class="text-xs uppercase tracking-[0.28em] text-zinc-400 print:text-[11px] print:tracking-[0.18em] print:text-black">
+          Chef · Boston, Massachusetts
+        </p>
+        <h1 class="mt-6 font-serif text-4xl sm:text-5xl font-medium leading-[0.98] tracking-tight md:text-7xl print:mt-1 print:text-2xl print:leading-none">
+          River Johanson
+        </h1>
+        <p class="mt-6 sm:mt-8 max-w-sm text-sm leading-relaxed text-zinc-300 print:mt-1 print:max-w-none print:text-xs print:text-black">
+          <a href="tel:+16038310359">(603) 831-0359</a>
+          <span class="px-2 text-zinc-500 print:text-black" aria-hidden="true">·</span>
+          <a href="mailto:river.johanson@gmail.com">river.johanson@gmail.com</a>
+        </p>
+      </div>
+      <figure class="md:col-span-7 print:hidden">
+        <img
+          src="./assets/images/hero.jpg"
+          alt="River Johanson, sous chef, in front of the Deuxave sign"
+          width="2500"
+          height="2000"
+          fetchpriority="high"
+          class="h-auto w-full object-contain"
+        />
+      </figure>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-6xl px-6 py-14 sm:py-20 md:py-24 md:px-10 print:max-w-none print:px-0 print:py-0" aria-labelledby="profile-heading">
+        <div class="animate-on-scroll grid gap-8 sm:gap-12 md:gap-16 opacity-0 translate-y-8 transition-all duration-1000 ease-out md:grid-cols-12 print:translate-y-0 print:gap-0 print:opacity-100">
+          <h2 id="profile-heading" class="font-serif text-3xl md:col-span-4 print:col-span-12 print:mb-1 print:text-xs print:font-sans print:font-medium print:uppercase print:tracking-[0.16em]">
+            Profile
+          </h2>
+          <p class="max-w-xl text-base sm:text-lg leading-relaxed text-zinc-200 md:col-span-8 print:col-span-12 print:max-w-none print:text-xs print:leading-snug print:text-black">
+            To me, hospitality is rooted in patience, discipline, and genuine care for the person at the table. Over eight years in fine dining and farm-to-table kitchens, I earned my way from hot appetizers to sous chef at Deuxave. I built my foundation on classical technique: whole-animal butchery, handmade pasta, and the steady focus required for dishes like a nine-hour French onion soup. I take pride in leading calm, collaborative kitchens where we respect seasonal ingredients and make every guest feel welcome.
+          </p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl bg-zinc-950 px-6 py-14 sm:py-20 md:py-24 text-zinc-50 md:px-10 print:hidden" aria-labelledby="plates-heading">
+        <div class="flex items-center justify-between gap-4 print:hidden">
+          <h2 id="plates-heading" class="font-serif text-3xl">Plates</h2>
+          <span data-plates-counter class="text-xs tracking-[0.18em] text-zinc-400">01 / 09</span>
+        </div>
+        <div data-plates-stage class="mt-6 sm:mt-8 relative min-h-[55svh] sm:min-h-[70vh] md:min-h-[84vh] overflow-hidden print:hidden">
+          <button type="button" data-plates-open aria-label="Open gallery" aria-haspopup="dialog" aria-controls="plates-dialog" class="absolute inset-0 block h-full w-full focus-visible:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-zinc-50 print:hidden">
+            <img data-plate-index="0" src="./assets/images/gallery-12.jpg" alt="Spiced Long Island Duck" width="1600" height="1600" loading="eager" aria-hidden="false" data-food-x="0.506" data-food-y="0.494" data-food-box="0.302 0.304 0.388 0.384" class="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="1" src="./assets/images/gallery-05.jpg" alt="Beets &amp; Basil" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.494" data-food-y="0.430" data-food-box="0.319 0.260 0.358 0.399" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="2" src="./assets/images/gallery-07.jpg" alt="Tagliatelle con cime di rapa" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.571" data-food-y="0.485" data-food-box="0.247 0.180 0.710 0.490" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="3" src="./assets/images/gallery-06.jpg" alt="Confit Pork Belly" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.477" data-food-y="0.549" data-food-box="0.281 0.406 0.356 0.294" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="4" src="./assets/images/gallery-03.jpg" alt="Hokkaido Scallop" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.518" data-food-y="0.460" data-food-box="0.241 0.180 0.477 0.520" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="5" src="./assets/images/gallery-02.jpg" alt="Giamone Chicken Breast" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.475" data-food-y="0.525" data-food-box="0.261 0.327 0.402 0.389" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="6" src="./assets/images/gallery-08.jpg" alt="Parsnip &amp; Artichoke Capaletti" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.492" data-food-y="0.529" data-food-box="0.216 0.358 0.560 0.390" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="7" src="./assets/images/gallery-11.jpg" alt="Kale Harissa Salad" width="1600" height="1598" loading="lazy" aria-hidden="true" data-food-x="0.442" data-food-y="0.401" data-food-box="0.061 0.080 0.636 0.670" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+            <img data-plate-index="8" src="./assets/images/gallery-09.jpg" alt="Wagyu Shortrib" width="1600" height="1600" loading="lazy" aria-hidden="true" data-food-x="0.536" data-food-y="0.495" data-food-box="0.247 0.253 0.520 0.399" class="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-700 ease-out motion-reduce:transition-none" />
+          </button>
+          <div class="pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-black/95 via-black/60 to-transparent px-5 sm:px-14 pb-6 pt-12 sm:pb-8 sm:pt-16 text-center md:px-24 print:hidden">
+            <h3 data-current-dish class="font-serif text-2xl sm:text-3xl md:text-5xl">Spiced Long Island Duck</h3>
+            <p data-current-detail class="mx-auto mt-2 sm:mt-3 max-w-2xl font-sans text-xs sm:text-sm leading-relaxed tracking-wide text-zinc-300">black sesame tahini, gooseberry, sesame spaetzle, wild mushrooms, arrowhead charcrout, scallion</p>
+          </div>
+          <button type="button" data-stage-previous class="absolute left-1.5 sm:left-2 top-1/2 z-20 -translate-y-1/2 bg-black/75 backdrop-blur-sm px-3 py-2.5 sm:px-4 sm:py-3 text-xs sm:text-sm text-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 print:hidden">Previous</button>
+          <button type="button" data-stage-next class="absolute right-1.5 sm:right-2 top-1/2 z-20 -translate-y-1/2 bg-black/75 backdrop-blur-sm px-3 py-2.5 sm:px-4 sm:py-3 text-xs sm:text-sm text-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 print:hidden">Next</button>
+        </div>
+        <div data-plates-index class="mt-6 flex flex-wrap justify-center gap-x-3.5 sm:gap-x-5 gap-y-2 sm:gap-y-3 text-center print:hidden">
+          <button type="button" data-plate-index="0" data-dish-detail="black sesame tahini, gooseberry, sesame spaetzle, wild mushrooms, arrowhead charcrout, scallion" aria-current="true" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-50 print:hidden">Spiced Long Island Duck</button>
+          <button type="button" data-plate-index="1" data-dish-detail="pistachio puree, basil ricotta, beet florets, rhubarb vin, poached rhubarb, rhubarb salt" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Beets &amp; Basil</button>
+          <button type="button" data-plate-index="2" data-dish-detail="English peas, chili, 2hr egg, pecorino" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Tagliatelle con cime di rapa</button>
+          <button type="button" data-plate-index="3" data-dish-detail="foie gras-apricot dumpling, braised leek, marinated shimejis, mushroom brodo, shallot" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Confit Pork Belly</button>
+          <button type="button" data-plate-index="4" data-dish-detail="purple romanesco, red kidney beans, pickled ramp, chorizo, pea greens" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Hokkaido Scallop</button>
+          <button type="button" data-plate-index="5" data-dish-detail="bay cauliflower puree, riced purple cauliflower, tuscan kale, charred chicken-kale sausage" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Giamone Chicken Breast</button>
+          <button type="button" data-plate-index="6" data-dish-detail="grilled artichoke, slow roasted parsnip, white pepper, mushroom puree, crispy artichoke, preserved lemon powder" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Parsnip &amp; Artichoke Capaletti</button>
+          <button type="button" data-plate-index="7" data-dish-detail="whipped harissa feta, sweet potato nest, pickled shallot, cranberry, radish, harissa vin." class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Kale Harissa Salad</button>
+          <button type="button" data-plate-index="8" data-dish-detail="parsnip puree, parsnip pave, shaved brussel sprouts, baby carrots" class="text-[11px] sm:text-xs uppercase tracking-[0.16em] sm:tracking-[0.18em] transition-colors hover:text-zinc-300 focus-visible:text-zinc-300 motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 text-zinc-600 print:hidden">Wagyu Shortrib</button>
+        </div>
+        <div id="plates-dialog" role="dialog" aria-modal="true" aria-label="Plates gallery" class="fixed inset-0 z-50 hidden print:hidden bg-black/95 backdrop-blur-sm">
+          <button type="button" data-plates-close class="fixed right-4 top-4 sm:right-6 sm:top-6 z-20 px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 print:hidden">[ Close ]</button>
+          <div data-plates-scroller tabindex="-1" class="h-full overflow-y-auto overscroll-contain print:hidden"></div>
+          <div class="fixed inset-x-0 bottom-4 sm:bottom-6 z-10 flex justify-center gap-6 sm:gap-12 print:hidden">
+            <button type="button" data-plates-previous class="px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 print:hidden">Previous</button>
+            <button type="button" data-plates-next class="px-3 py-2 sm:px-4 sm:py-3 text-xs sm:text-sm text-zinc-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50 print:hidden">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-14 sm:py-20 md:py-24 md:px-10 print:max-w-none print:px-0 print:py-0" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="animate-on-scroll mb-10 sm:mb-14 md:mb-16 font-serif text-2xl sm:text-3xl opacity-0 translate-y-8 transition-all duration-1000 ease-out print:mb-1 print:translate-y-0 print:text-xs print:font-sans print:font-medium print:uppercase print:tracking-[0.16em] print:opacity-100">
+          Experience
+        </h2>
+
+        <div class="grid gap-10 sm:gap-14 md:gap-16 print:gap-0">
+          <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
+            <header class="md:col-span-4">
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Sous Chef</h3>
+              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">1928 Rowes Wharf — Boston, MA</p>
+              <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">July 2026 – Sept 2026</p>
+            </header>
+            <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
+              <li>I was entrusted by the executive chef to direct daily kitchen operations, lead opening and closing procedures, and transition the culinary program toward fresh, seasonal cuisine.</li>
+              <li>I oversaw whole-animal butchery across fish, poultry, and lamb, communicated bilingual standards with the kitchen team, and developed signature dishes that remain active on the menu: cocoa-rubbed duck breast, Black Sea bass crudo, red currant scallops, and duck confit.</li>
+            </ul>
+          </article>
+
+          <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
+            <header class="md:col-span-4">
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Sous Chef</h3>
+              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">Deuxave — Boston, MA</p>
+              <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Aug 2023 – July 2026</p>
+            </header>
+            <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
+              <li>I began on hot appetizers and progressed to junior sous chef and sous chef at this Forbes Four-Star restaurant, building a comprehensive foundation across every station on the line.</li>
+              <li>I expedited dinner service and directed a brigade of 6–10 cooks, maintaining rigorous culinary standards through 160-cover Saturday services and leading the kitchen when serving as sole chef on duty.</li>
+              <li>I managed whole-animal butchery, handmade pasta production, inventory, and staff training, while contributing seasonal creations to the five-course tasting menu and developing the signature beef carpaccio that remains a house staple.</li>
+            </ul>
+          </article>
+
+
+          <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
+            <header class="md:col-span-4">
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Line Cook / Floating Cook</h3>
+              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">The Farmer's Daughter — Sudbury, MA</p>
+              <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Feb 2023 – July 2023</p>
+            </header>
+            <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
+              <li>I prepared rotating farm-to-table menus centered on local New England produce, working across multiple line stations during high-volume services with an emphasis on scratch technique.</li>
+            </ul>
+          </article>
+
+          <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
+            <header class="md:col-span-4">
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Line Cook / Brunch Chef</h3>
+              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">The Birchwood Inn &amp; Tavern — Temple, NH</p>
+              <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Oct 2020 – Jan 2023</p>
+            </header>
+            <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
+              <li>I developed the seasonal Sunday brunch program, managed food ordering and kitchen scheduling, and operated the dinner sauté station preparing local beef and lamb entrées.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-14 sm:py-20 md:py-24 md:px-10 print:max-w-none print:px-0 print:py-0" aria-labelledby="training-heading">
+        <div class="animate-on-scroll grid gap-8 sm:gap-12 md:gap-16 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
+          <h2 id="training-heading" class="mb-10 sm:mb-14 md:mb-16 font-serif text-2xl sm:text-3xl md:col-span-4 print:col-span-12 print:text-xs print:font-sans print:font-medium print:uppercase print:tracking-[0.16em]">
+            Training
+          </h2>
+          <ul class="space-y-3 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
+            <li>Private culinary training under Chef Carol Spicer (CIA)</li>
+            <li>ServSafe Certified (2019)</li>
+            <li>HiSET (2023)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        const section = document.querySelector('section[aria-labelledby="plates-heading"]');
+        const buttons = Array.from(section.querySelectorAll('[data-plates-index] button[data-plate-index]'));
+        const stage = section.querySelector('[data-plates-stage]');
+        const stageImages = Array.from(stage.querySelectorAll('img[data-plate-index]'));
+        const currentDish = stage.querySelector('[data-current-dish]');
+        const currentDetail = stage.querySelector('[data-current-detail]');
+        const counter = section.querySelector('[data-plates-counter]');
+        const photographButton = stage.querySelector('[data-plates-open]');
+        const stagePrevious = stage.querySelector('[data-stage-previous]');
+        const stageNext = stage.querySelector('[data-stage-next]');
+        const overlay = section.querySelector('#plates-dialog');
+        const scroller = overlay.querySelector('[data-plates-scroller]');
+        const closeButton = overlay.querySelector('[data-plates-close]');
+        const previousButton = overlay.querySelector('[data-plates-previous]');
+        const nextButton = overlay.querySelector('[data-plates-next]');
+        const controls = [closeButton, previousButton, nextButton];
+
+        const plates = buttons.map(function (button) {
+          const image = stageImages.find(function (candidate) {
+            return candidate.dataset.plateIndex === button.dataset.plateIndex;
+          });
+          return {
+            name: button.textContent.trim(),
+            detail: button.dataset.dishDetail,
+            src: image.getAttribute('src'),
+            width: image.getAttribute('width'),
+            height: image.getAttribute('height'),
+            loading: image.getAttribute('loading'),
+            foodX: Number(image.dataset.foodX),
+            foodY: Number(image.dataset.foodY),
+            foodBox: image.dataset.foodBox
+          };
+        });
+
+        const figures = plates.map(function (plate, index) {
+          const figure = document.createElement('figure');
+          figure.dataset.plateIndex = String(index);
+          figure.className = 'h-[100svh] box-border flex flex-col justify-center items-center gap-4 sm:gap-6 px-4 sm:px-8 md:px-16 pt-14 pb-20 sm:pt-20 sm:pb-24 md:pt-24 md:pb-28 print:hidden';
+
+          const imageWrapper = document.createElement('div');
+          imageWrapper.className = 'relative w-full max-w-[min(100%,70svh)] aspect-square mx-auto overflow-hidden shrink-0 print:hidden';
+          const image = document.createElement('img');
+          image.className = 'h-full w-full object-cover print:hidden';
+          image.dataset.foodX = String(plate.foodX);
+          image.dataset.foodY = String(plate.foodY);
+          image.dataset.foodBox = plate.foodBox;
+          image.src = plate.src;
+          image.alt = plate.name;
+          image.width = Number(plate.width);
+          image.height = Number(plate.height);
+          if (plate.loading) image.loading = plate.loading;
+          imageWrapper.appendChild(image);
+
+          const caption = document.createElement('figcaption');
+          caption.className = 'shrink-0 text-center print:hidden';
+          const name = document.createElement('span');
+          name.className = 'block font-serif text-xl sm:text-2xl md:text-3xl text-zinc-50 print:hidden';
+          name.textContent = plate.name;
+          const detail = document.createElement('span');
+          detail.className = 'mt-1.5 sm:mt-2 block font-sans text-xs sm:text-sm tracking-wide text-zinc-400 print:hidden';
+          detail.textContent = plate.detail;
+          caption.append(name, detail);
+          figure.append(imageWrapper, caption);
+          scroller.appendChild(figure);
+          return figure;
+        });
+
+        function focalPosition(element) {
+          const rect = element.getBoundingClientRect();
+          const foodX = Number(element.dataset.foodX);
+          const foodY = Number(element.dataset.foodY);
+          if (!rect.width || !rect.height || Number.isNaN(foodX) || Number.isNaN(foodY)) return;
+          const box = (element.dataset.foodBox || '').split(' ').map(Number);
+          const hasBox = box.length === 4 && box.every(function (value) { return !Number.isNaN(value); });
+          const imageAspect = element.naturalWidth && element.naturalHeight
+            ? element.naturalWidth / element.naturalHeight
+            : 1;
+          const ratio = (rect.width / rect.height) / imageAspect;
+          const onStage = Boolean(element.closest('[data-plates-stage]'));
+          let fw, fh;
+          let targetY;
+          let safeBottom;
+
+          if (ratio >= 1) {
+            fw = 1;
+            fh = 1 / ratio;
+            targetY = onStage ? 0.42 : 0.50;
+            safeBottom = onStage ? 0.82 : 0.98;
+          } else if (onStage) {
+            fh = 0.78;
+            fw = fh * ratio;
+            targetY = 0.38;
+            safeBottom = 0.78;
+          } else {
+            fh = 1;
+            fw = 1;
+            targetY = 0.50;
+            safeBottom = 1.0;
+          }
+          let left = Math.min(Math.max(foodX - fw / 2, 0), Math.max(0, 1 - fw));
+          let top = foodY - targetY * fh;
+
+          if (hasBox) {
+            const foodTop = box[1];
+            const foodBottom = box[1] + box[3];
+            const pad = 0.03;
+            // Never crop the top edge of the food
+            const maxTop = Math.max(0, foodTop - pad);
+            if (top > maxTop) top = maxTop;
+
+            const minTop = foodBottom + pad - fh * safeBottom;
+            if ((foodBottom - foodTop + 2 * pad) <= fh * safeBottom) {
+              if (top < minTop) top = minTop;
+            } else {
+              const centerY = (foodTop + foodBottom) / 2;
+              top = Math.max(0, centerY - (fh * safeBottom) / 2);
+              if (top > maxTop) top = maxTop;
+            }
+          }
+
+          top = Math.min(Math.max(top, 0), Math.max(0, 1 - fh));
+          element.style.objectFit = 'cover';
+          element.style.objectPosition = '50% 50%';
+          element.style.objectViewBox = 'inset(' +
+            (top * 100).toFixed(2) + '% ' +
+            (Math.max(0, 1 - (left + fw)) * 100).toFixed(2) + '% ' +
+            (Math.max(0, 1 - (top + fh)) * 100).toFixed(2) + '% ' +
+            (left * 100).toFixed(2) + '%)';
+        }
+
+        function frameFood() {
+          stageImages.forEach(focalPosition);
+          figures.forEach(function (figure) {
+            const image = figure.querySelector('img');
+            if (image) focalPosition(image);
+          });
+        }
+
+        let openingButton = null;
+        let isOpen = false;
+        let currentIndex = 0;
+        let previousHtmlOverflow = '';
+        let previousBodyOverflow = '';
+
+        function select(index) {
+          currentIndex = ((index % plates.length) + plates.length) % plates.length;
+          stageImages.forEach(function (image) {
+            const active = Number(image.dataset.plateIndex) === currentIndex;
+            image.classList.toggle('opacity-100', active);
+            image.classList.toggle('opacity-0', !active);
+            image.setAttribute('aria-hidden', String(!active));
+          });
+          currentDish.textContent = plates[currentIndex].name;
+          currentDetail.textContent = plates[currentIndex].detail;
+          counter.textContent = String(currentIndex + 1).padStart(2, '0') + ' / ' + String(plates.length).padStart(2, '0');
+          buttons.forEach(function (button) {
+            const active = Number(button.dataset.plateIndex) === currentIndex;
+            button.classList.toggle('text-zinc-50', active);
+            button.classList.toggle('text-zinc-600', !active);
+            if (active) {
+              button.setAttribute('aria-current', 'true');
+            } else {
+              button.removeAttribute('aria-current');
+            }
+          });
+        }
+
+        function figureTop(figure) {
+          return figure.getBoundingClientRect().top -
+            scroller.getBoundingClientRect().top +
+            scroller.scrollTop;
+        }
+
+        function scrollToFigure(index) {
+          scroller.scrollTo({ top: figureTop(figures[index]), behavior: 'auto' });
+        }
+
+        function open(button, index) {
+          openingButton = button;
+          previousHtmlOverflow = document.documentElement.style.overflow;
+          previousBodyOverflow = document.body.style.overflow;
+          document.documentElement.style.overflow = 'hidden';
+          document.body.style.overflow = 'hidden';
+          overlay.classList.remove('hidden');
+          isOpen = true;
+          closeButton.focus({ preventScroll: true });
+          scrollToFigure(index);
+          requestAnimationFrame(frameFood);
+        }
+
+        function close() {
+          if (!isOpen) return;
+          isOpen = false;
+          overlay.classList.add('hidden');
+          document.documentElement.style.overflow = previousHtmlOverflow;
+          document.body.style.overflow = previousBodyOverflow;
+          openingButton.focus({ preventScroll: true });
+        }
+
+        function navigate(direction) {
+          const current = figures.reduce(function (nearest, figure, index) {
+            return Math.abs(figureTop(figure) - scroller.scrollTop) <
+              Math.abs(figureTop(figures[nearest]) - scroller.scrollTop)
+              ? index : nearest;
+          }, 0);
+          scrollToFigure(Math.max(0, Math.min(figures.length - 1, current + direction)));
+        }
+
+        let stageTouchStart = null;
+        let suppressStageClickUntil = 0;
+
+        stage.addEventListener('touchstart', function (event) {
+          if (event.touches.length !== 1) {
+            stageTouchStart = null;
+            return;
+          }
+
+          const touch = event.touches[0];
+          stageTouchStart = {
+            identifier: touch.identifier,
+            x: touch.clientX,
+            y: touch.clientY
+          };
+        }, { passive: true });
+
+        stage.addEventListener('touchend', function (event) {
+          const start = stageTouchStart;
+          stageTouchStart = null;
+          if (!start || event.touches.length !== 0) return;
+
+          const touch = Array.from(event.changedTouches).find(function (candidate) {
+            return candidate.identifier === start.identifier;
+          });
+          if (!touch) return;
+
+          const deltaX = touch.clientX - start.x;
+          const deltaY = touch.clientY - start.y;
+
+          if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+            select(currentIndex + (deltaX < 0 ? 1 : -1));
+            suppressStageClickUntil = performance.now() + 400;
+          }
+        }, { passive: true });
+
+        stage.addEventListener('touchcancel', function () {
+          stageTouchStart = null;
+        }, { passive: true });
+
+        stage.addEventListener('click', function (event) {
+          if (event.detail !== 0 && performance.now() < suppressStageClickUntil) {
+            suppressStageClickUntil = 0;
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, { capture: true });
+
+        stagePrevious.addEventListener('click', function () { select(currentIndex - 1); });
+        stageNext.addEventListener('click', function () { select(currentIndex + 1); });
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            select(Number(button.dataset.plateIndex));
+          });
+        });
+        photographButton.addEventListener('click', function () {
+          open(photographButton, currentIndex);
+        });
+
+        closeButton.addEventListener('click', close);
+        previousButton.addEventListener('click', function () { navigate(-1); });
+        nextButton.addEventListener('click', function () { navigate(1); });
+
+        document.addEventListener('keydown', function (event) {
+          if (!isOpen) {
+            const target = event.target;
+            if (event.altKey || event.ctrlKey || event.metaKey ||
+                target.isContentEditable || target.closest('input, textarea, select, [contenteditable]')) return;
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+              event.preventDefault();
+              select(currentIndex + (event.key === 'ArrowLeft' ? -1 : 1));
+            }
+            return;
+          }
+          if (event.key === 'Escape') {
+            event.preventDefault();
+            close();
+          } else if (event.key === 'Tab') {
+            event.preventDefault();
+            const index = controls.indexOf(document.activeElement);
+            const target = index === -1
+              ? (event.shiftKey ? nextButton : closeButton)
+              : controls[(index + (event.shiftKey ? controls.length - 1 : 1)) % controls.length];
+            target.focus({ preventScroll: true });
+          }
+        });
+
+        window.addEventListener('resize', frameFood);
+        if (document.readyState === 'complete') frameFood();
+        else window.addEventListener('load', frameFood);
+
+        document.addEventListener('focusin', function (event) {
+          if (isOpen && !controls.includes(event.target)) {
+            closeButton.focus({ preventScroll: true });
+          }
+        });
+      })();
+    </script>
+    <script src="./assets/js/animations.js"></script>
+  </body>
+</html>
