@@ -3,6 +3,15 @@
   margin: 0.45in 0.55in;
 }
 
+.hero-radial-vignette {
+  background: radial-gradient(
+    ellipse at 50% 35%,
+    transparent 20%,
+    rgba(9, 9, 11, 0.35) 70%,
+    rgba(9, 9, 11, 0.7) 100%
+  );
+}
+
 .plate-placeholder {
   background:
     radial-gradient(circle at 50% 46%, transparent 28%, rgba(255, 255, 255, 0.14) 29%, rgba(255, 255, 255, 0.14) 30%, transparent 31%),
@@ -10,9 +19,17 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  [data-hero-video-layer],
+  [data-hero-title-layer] {
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: auto !important;
+  }
+
   .animate-on-scroll {
     opacity: 1 !important;
     transform: none !important;
+    transition: none !important;
   }
 }
 
@@ -47,8 +64,22 @@
   body {
     background: #fff !important;
     color: #000 !important;
+    overflow: visible !important;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
+  }
+
+  .resume-action,
+  [data-video-hero],
+  #plates-dialog,
+  main > section[aria-labelledby="plates-heading"] {
+    display: none !important;
+  }
+
+  .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 
   a {
@@ -58,8 +89,8 @@
 
   body {
     margin: 0 !important;
-    font-size: 10.5pt !important;
-    line-height: 1.32 !important;
+    font-size: 10pt !important;
+    line-height: 1.22 !important;
   }
 
   body > header,
@@ -83,16 +114,26 @@
 
   main > section:not([aria-labelledby="plates-heading"]) article {
     margin: 0 !important;
-    padding: 8pt 0 0 !important;
-    break-inside: auto;
+    padding: 6pt 0 0 !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  body > header h1,
+  main > section:not([aria-labelledby="plates-heading"]) h2,
+  main > section:not([aria-labelledby="plates-heading"]) h3,
+  main > section:not([aria-labelledby="plates-heading"]) article header {
+    break-after: avoid;
+    page-break-after: avoid;
+    letter-spacing: normal !important;
   }
 
   body > header p,
   main > section:not([aria-labelledby="plates-heading"]) p,
   main > section:not([aria-labelledby="plates-heading"]) ul,
   main > section:not([aria-labelledby="plates-heading"]) li {
-    font-size: 10.5pt !important;
-    line-height: 1.32 !important;
+    font-size: 10pt !important;
+    line-height: 1.22 !important;
   }
 
   body > header p,
@@ -101,11 +142,15 @@
   }
 
   main > section:not([aria-labelledby="plates-heading"]) li {
-    margin: 0 0 1.5pt !important;
+    margin: 0 0 1pt !important;
   }
 
   main > section:not([aria-labelledby="plates-heading"]) ul {
-    margin: 3pt 0 0 !important;
+    margin: 2pt 0 0 !important;
+  }
+
+  main > section:not([aria-labelledby="plates-heading"]) p.resume-references {
+    margin-top: 8pt !important;
   }
 
   main > section:not([aria-labelledby="plates-heading"]) ul.list-disc {
@@ -113,23 +158,20 @@
   }
 
   body > header h1 {
-    margin: 6pt 0 3pt !important;
+    margin: 0 0 3pt !important;
     font-size: 22pt !important;
     line-height: 1.1 !important;
   }
 
-  main > section:not([aria-labelledby="plates-heading"]) h2,
-  main > section:not([aria-labelledby="plates-heading"]) h3 {
-    line-height: 1.25 !important;
-  }
-
   main > section:not([aria-labelledby="plates-heading"]) h2 {
-    margin: 12pt 0 4pt !important;
+    margin: 8pt 0 3pt !important;
     font-size: 11pt !important;
+    line-height: 1.2 !important;
   }
 
   main > section:not([aria-labelledby="plates-heading"]) h3 {
     margin: 0 !important;
-    font-size: 12pt !important;
+    font-size: 11pt !important;
+    line-height: 1.2 !important;
   }
 }

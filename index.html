@@ -31,54 +31,74 @@
   </head>
   <body class="bg-zinc-950 font-sans text-zinc-50 antialiased print:bg-white print:text-black">
     <div class="resume-action fixed bottom-7 right-4 sm:bottom-8 sm:right-8 z-50 print:hidden">
-      <button
-        type="button"
+      <a
+        href="./assets/River-Johanson-Sous-Chef-Resume.pdf"
+        download="River-Johanson-Sous-Chef-Resume.pdf"
+        target="_blank"
+        rel="noopener"
         aria-label="Download Resume"
-        onclick="window.print()"
-        class="resume-btn border border-zinc-50/30 bg-zinc-950/80 px-4 py-2.5 sm:px-5 sm:py-3 text-[10px] sm:text-xs uppercase tracking-[0.20em] sm:tracking-[0.22em] text-zinc-50 backdrop-blur-sm print:hidden transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
+        class="resume-btn inline-block border border-zinc-50/30 bg-zinc-950/80 px-4 py-2.5 sm:px-5 sm:py-3 text-[10px] sm:text-xs uppercase tracking-[0.20em] sm:tracking-[0.22em] text-zinc-50 backdrop-blur-sm print:hidden transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-50"
       >
         Download Resume
-      </button>
+      </a>
     </div>
 
-    <header class="mx-auto grid min-h-[100svh] max-w-6xl items-center gap-10 sm:gap-14 md:gap-16 px-6 py-12 sm:py-16 md:py-24 md:grid-cols-12 md:px-10 print:min-h-0 print:max-w-none print:gap-0 print:px-0 print:py-0">
-      <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out md:col-span-5 print:col-span-12 print:translate-y-0 print:opacity-100">
-        <p class="text-xs uppercase tracking-[0.28em] text-zinc-400 print:text-[11px] print:tracking-[0.18em] print:text-black">
-          Chef · Boston, Massachusetts
-        </p>
-        <h1 class="mt-6 font-serif text-4xl sm:text-5xl font-medium leading-[0.98] tracking-tight md:text-7xl print:mt-1 print:text-2xl print:leading-none">
-          River Johanson
-        </h1>
-        <p class="hidden print:block mt-1 max-w-none text-xs text-black print:mt-1 print:max-w-none print:text-xs print:text-black">
-          (603) 831-0359 <span class="px-1 print:text-black" aria-hidden="true">·</span> river.johanson@gmail.com
-        </p>
-      </div>
-      <figure class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out md:col-span-7 print:hidden relative overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900 shadow-2xl">
-        <video autoplay loop muted playsinline poster="./assets/images/hero-video-poster.jpg" class="aspect-square w-full object-cover">
+    <section data-video-hero aria-labelledby="hero-heading" class="relative h-[100svh] w-full overflow-hidden bg-zinc-950 print:hidden">
+      <div data-hero-video-layer class="absolute inset-0 will-change-[opacity]">
+        <video autoplay loop muted playsinline aria-hidden="true" poster="./assets/images/hero-video-poster.jpg" class="h-full w-full object-cover object-center">
           <source src="./assets/video/hero.mp4" type="video/mp4" />
           <source src="./assets/video/hero.mov" type="video/quicktime" />
-          <img src="./assets/images/hero-video-poster.jpg" alt="River Johanson cooking on the line" class="aspect-square w-full object-cover" />
+          <img src="./assets/images/hero-video-poster.jpg" alt="" class="h-full w-full object-cover" />
         </video>
-        <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-transparent to-transparent"></div>
-        <figcaption class="pointer-events-none absolute bottom-4 left-5 right-5 flex items-center justify-between text-xs tracking-wider text-zinc-400">
-          <span class="uppercase tracking-[0.2em] text-zinc-300">On the line</span>
-          <span class="inline-flex items-center gap-1.5 text-[11px] text-zinc-400">
-            <span class="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            Boston, MA
-          </span>
-        </figcaption>
-      </figure>
+      </div>
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 bg-gradient-to-b from-zinc-950/60 via-zinc-950/20 to-zinc-950"></div>
+      <div aria-hidden="true" class="hero-radial-vignette pointer-events-none absolute inset-0"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 bottom-0 h-44 sm:h-64 bg-gradient-to-t from-zinc-950 via-zinc-950/85 to-transparent"></div>
+      <div data-hero-title-layer class="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-end px-6 pb-16 sm:pb-20 md:px-10 md:pb-24 will-change-[opacity]">
+        <p class="text-xs uppercase tracking-[0.28em] text-zinc-300">Sous Chef · Boston, Massachusetts</p>
+        <h1 id="hero-heading" class="mt-4 sm:mt-5 font-serif text-5xl sm:text-6xl font-medium leading-[0.96] tracking-tight md:text-8xl text-zinc-50">
+          River Johanson
+        </h1>
+        <div class="mt-8 sm:mt-10 flex items-center gap-4 text-[11px] uppercase tracking-[0.22em] text-zinc-400">
+          <span aria-hidden="true" class="block h-8 sm:h-10 w-px bg-zinc-400/70"></span>
+          <span>On the line</span>
+        </div>
+      </div>
+    </section>
+
+    <header class="hidden print:block">
+      <h1>River Johanson</h1>
+      <p>SOUS CHEF</p>
+      <p>Boston, USA • (603) 831-0359 • River.Johanson@gmail.com</p>
     </header>
 
     <main>
-      <section class="mx-auto max-w-6xl px-6 py-14 sm:py-20 md:py-24 md:px-10 print:max-w-none print:px-0 print:py-0" aria-labelledby="profile-heading">
-        <div class="animate-on-scroll grid gap-8 sm:gap-12 md:gap-16 opacity-0 translate-y-8 transition-all duration-1000 ease-out md:grid-cols-12 print:translate-y-0 print:gap-0 print:opacity-100">
-          <h2 id="profile-heading" class="font-serif text-3xl md:col-span-4 print:col-span-12 print:mb-1 print:text-xs print:font-sans print:font-medium print:uppercase print:tracking-[0.16em]">
-            Profile
-          </h2>
-          <p class="max-w-xl text-base sm:text-lg leading-relaxed text-zinc-200 md:col-span-8 print:col-span-12 print:max-w-none print:text-xs print:leading-snug print:text-black">
-            To me, hospitality is rooted in patience, discipline, and genuine care for the person at the table. Over eight years in fine dining and farm-to-table kitchens, including my time as sous chef at Deuxave, I built my foundation on classical technique: whole-animal butchery and handmade pasta. I take pride in leading calm, collaborative kitchens where we respect seasonal ingredients and make every guest feel welcome.
-          </p>
+      <section class="mx-auto max-w-6xl px-6 py-16 sm:py-24 md:py-28 md:px-10 print:max-w-none print:px-0 print:py-0" aria-labelledby="profile-heading">
+        <div class="grid items-center gap-10 sm:gap-12 md:gap-16 md:grid-cols-12 print:gap-0">
+          <figure class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out md:col-span-5 print:hidden">
+            <div class="overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-900 shadow-2xl">
+              <img
+                src="./assets/images/profile.jpg"
+                alt="River Johanson, Sous Chef"
+                width="682"
+                height="1024"
+                loading="eager"
+                class="aspect-[3/4] w-full object-cover object-top"
+              />
+            </div>
+          </figure>
+          <div class="animate-on-scroll opacity-0 translate-y-8 transition-all duration-1000 ease-out md:col-span-7 flex flex-col justify-center print:col-span-12 print:translate-y-0 print:opacity-100">
+            <h2 id="profile-heading" class="font-serif text-3xl sm:text-4xl print:mb-1 print:text-xs print:font-sans print:font-medium print:uppercase print:tracking-[0.16em]">
+              <span class="print:hidden">Profile</span>
+              <span class="hidden print:inline">Summary</span>
+            </h2>
+            <p class="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-zinc-200 print:hidden">
+              To me, hospitality is rooted in patience, discipline, and genuine care for the person at the table. Over eight years in fine dining and farm-to-table kitchens, including my time as sous chef at Deuxave, I built my foundation on classical technique: whole-animal butchery and handmade pasta. I take pride in leading calm, collaborative kitchens where we respect seasonal ingredients and make every guest feel welcome.
+            </p>
+            <p class="hidden print:block print:max-w-none print:text-black">
+              Sous Chef with 8+ years working in high-volume fine dining and farm-to-table restaurants, supporting $4–5M annual F&amp;B revenue while holding food cost at 25–30%. Forbes 4-Star listed and AAA 4-Diamond recognized. Experienced in leading service, developing seasonal menus, and maintaining high standards in busy kitchens.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -140,8 +160,10 @@
               <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">July 2026 – Sept 2026</p>
             </header>
             <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
-              <li>Directed daily kitchen operations alongside the executive chef, leading prep and service while transitioning the menu toward fresh, seasonal dishes.</li>
-              <li>Managed whole-animal butchery across fish, poultry, and lamb, worked closely with our bilingual kitchen team, and created signature dishes that remain on the active menu—including cocoa-rubbed duck breast, black sea bass crudo, red currant scallops, and duck confit.</li>
+              <li>Helped transition the menu toward more seasonal, creative, and approachable food while keeping execution practical for service.</li>
+              <li>Took responsibility for daily kitchen operations, ordering, opening and closing, and staff training.</li>
+              <li>Handled whole-fish, poultry, and lamb butchery while developing daily specials and new menu dishes.</li>
+              <li>Created several current menu items, including cocoa-rubbed duck breast, Black Sea bass crudo, red currant scallops, and duck confit.</li>
             </ul>
           </article>
 
@@ -152,35 +174,38 @@
               <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Aug 2023 – July 2026</p>
             </header>
             <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
-              <li>Earned the sous chef role at this Forbes Four-Star restaurant, working every station on the line and mastering classical French technique.</li>
-              <li>Expedited dinner services and led a line of 6–10 cooks through 160-cover Saturday nights, maintaining high kitchen standards and running service as sole chef on duty when needed.</li>
-              <li>Oversaw whole-animal butchery, fresh pasta production, inventory, and line training, while developing seasonal courses for the five-course tasting menu and creating the house-staple beef carpaccio.</li>
+              <li>Led 6–10 kitchen staff through busy dinner services at a Forbes 4-Star restaurant, keeping quality and standards consistent.</li>
+              <li>Handled day-to-day kitchen operations including ordering, scheduling, food costs, opening and closing, and training new staff.</li>
+              <li>Worked across all stations as needed, with a focus on butchery, fresh pasta, and seasonal menu development.</li>
+              <li>Helped develop and execute dishes across both à la carte and tasting menus, serving 160+ guests on peak nights.</li>
             </ul>
           </article>
 
-
           <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
             <header class="md:col-span-4">
-              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Line Cook / Floating Cook</h3>
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Rounds Cook</h3>
               <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">The Farmer's Daughter — Sudbury, MA</p>
               <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Feb 2023 – July 2023</p>
             </header>
             <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
-              <li>Prepped and cooked rotating farm-to-table menus centered on local New England produce, working high-volume line stations with a focus on scratch technique.</li>
+              <li>Prepared dishes for a rotating seasonal menu using locally sourced ingredients.</li>
+              <li>Supported multiple stations and roles during high-volume service (250+ covers).</li>
             </ul>
           </article>
 
           <article class="animate-on-scroll grid gap-6 opacity-0 translate-y-8 transition-all duration-1000 ease-out border-t border-zinc-800 pt-8 sm:pt-10 md:grid-cols-12 print:translate-y-0 print:gap-0 print:border-0 print:pt-1 print:opacity-100">
             <header class="md:col-span-4">
-              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Line Cook / Brunch Chef</h3>
-              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">The Birchwood Inn &amp; Tavern — Temple, NH</p>
+              <h3 class="font-serif text-xl sm:text-2xl leading-tight print:font-sans print:text-xs print:font-medium">Brunch Chef</h3>
+              <p class="mt-3 text-sm text-zinc-300 print:mt-0 print:text-xs print:text-black">Birchwood Inn &amp; Tavern — Temple, NH</p>
               <p class="mt-1 text-xs uppercase tracking-[0.18em] text-zinc-500 print:text-xs print:normal-case print:tracking-normal print:text-black">Oct 2020 – Jan 2023</p>
             </header>
             <ul class="list-disc space-y-3 pl-5 text-sm leading-relaxed text-zinc-300 md:col-span-8 print:space-y-0 print:text-xs print:text-black">
-              <li>Built the seasonal Sunday brunch program, managed food ordering and kitchen prep, and ran the dinner sauté station preparing local beef and lamb entrées.</li>
+              <li>Created and led a Sunday brunch menu focused on local, seasonal ingredients while managing ordering, inventory, and scheduling.</li>
+              <li>Supported dinner service as a sauté cook, with a focus on beef and lamb.</li>
             </ul>
           </article>
         </div>
+        <p class="resume-references hidden print:block">References available upon request</p>
       </section>
 
     </main>
